@@ -11,23 +11,17 @@
     />
     <style>
       .header {
-        height: 40px;
         background-color: darkturquoise;
-      }
-      .nav-list {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
         height: 40px;
-        color: white;
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
       }
+
       .nav-item {
-        height: 40px;
-        color: white;
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
+        float: left;
         margin-left: 16px;
+        color: white;
       }
       .content {
         height: 5000px;
@@ -38,30 +32,35 @@
         height: 200px;
         background-color: aquamarine;
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
+        top: calc(50% - 100px);
+        left: calc(50% - 100px);
       }
-      .ear_right {
+      .ear {
         background-color: brown;
         height: 60px;
-        width: 20%;
-        float: right;
-        margin-bottom: 60px;
+        width: 40px;
+        position: absolute;
+        top: -60px;
       }
       .ear_left {
-        background-color: brown;
-        height: 60px;
-        width: 20%;
-        float: left;
-        margin-bottom: 60px;
+        left: -40px;
+      }
+      .ear_right {
+        right: -40px;
+      }
+      .eye {
+        position: absolute;
+        border-radius: 50%;
+        background-color: grey;
+        width: 30px;
+        height: 30px;
+        margin: 80px;
+      }
+      .eye_left {
+        left: -40px;
       }
       .eye_right {
-        border-radius: 30%;
-        background-color: grey;
-        margin-top: 80px;
+        right: -40px;
       }
     </style>
   </head>
